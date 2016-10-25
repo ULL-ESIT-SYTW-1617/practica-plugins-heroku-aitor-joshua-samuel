@@ -1,3 +1,5 @@
+(MAIN)
+
 #Práctica: Creación de un Paquete NPM
 
 ##¿Qué hace el módulo?
