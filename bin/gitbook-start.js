@@ -5,7 +5,7 @@ var fs = require('fs-extended');
 var path = require('path');
 var fs2 = require('fs');
 var iaas = require('gitbook-start-iaas-ull-es-aitor-joshua-samuel');
-
+var heroku = require('gitbook-start-heroku-ull-es-aitor-joshua-samuel');
 
 if (argv.n) {
     var second_path = path.resolve(__dirname, "../template")
@@ -14,11 +14,15 @@ if (argv.n) {
             console.error(err)
     });
 
-} else if (argv.d) {
+} else if (argv.d == 'iaas') {
 
   iaas.initialize();
 
-} else {
+} else if(argv.d =='heroku'){
+	
+	heroku.initialize();
+
+}else {
     console.log("Añada un comando correcto");
     console.log("-> -n [NOMBRE DE DIR] (Crea la estructura de directorios)");
 }
