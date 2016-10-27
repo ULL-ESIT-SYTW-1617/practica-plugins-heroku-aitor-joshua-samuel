@@ -1,8 +1,8 @@
 //Dependencias
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
+var exec = require('child_process').exec;
 var shell = require('gulp-shell');
-var json = require('./package.json');
 
 gulp.task('deploy', function() {
   return gulp.src(['_book/*/*/*','_book/*/*','_book/*'])
