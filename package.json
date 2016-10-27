@@ -25,6 +25,9 @@
     "cli",
     "starter"
   ],
+  "engines": {
+  		"node" : "5.9.1"
+  	},
   "author": "Aitor Bernal Falcón <alu0100830064@ull.edu.es> (https://alu0100830064.github.io/), Joshua Perez García <alu0100830064@ull.edu.es> (https://joshuape.github.io/), Samuel Ramos Barroso <alu0100815146@ull.edu.es> (https://losnen.github.io/)",
   "license": "MIT",
   "bugs": {
