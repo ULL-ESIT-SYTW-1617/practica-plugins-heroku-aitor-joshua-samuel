@@ -4,8 +4,9 @@ var argv = require('minimist')(process.argv.slice(2));
 var fs = require('fs-extended');
 var path = require('path');
 var fs2 = require('fs');
-var iaas = require('gitbook-start-iaas-ull-es-aitor-joshua-samuel');
-var heroku = require('gitbook-start-heroku-aitor-joshua-samuel');
+var shell = require('shelljs/global');
+var dependencias = ls('./node_modules/').stdout.split("\n");
+var expresion = /gitbook-start-*/;
 
 if (argv.n) {
     var second_path = path.resolve(__dirname, "../template")
@@ -14,13 +15,28 @@ if (argv.n) {
             console.error(err)
     });
 
-} else if (argv.d == 'iaas') {
+} else if (argv.d) {
 
-    iaas.initialize();
 
-} else if (argv.d == 'heroku') {
 
-    heroku.initialize();
+
+
+
+for (i = 0; i < dependencias.length; i++) {
+
+  try {
+    if (dependencias[i].match(expresion)) {
+      console.log(dependencias[i]);
+      var req = require(dependencias[i]);
+      console.log(dependencias[i]);
+      req.initialize();
+    }
+  } catch (err) {
+      console.log("Error al cargar las dependencia: " + dependencias[i]);
+  }
+
+}
+
 
 } else {
     console.log("Añada un comando correcto");
