@@ -1,6 +1,6 @@
 {
   "name": "gitbook-start-iaas-aitor-joshua-samuel",
-  "version": "0.1.12",
+  "version": "2.1.1",
   "description": "A cli for gitbook deploys",
   "main": "bin/gitbook-start.js",
   "bin": {
@@ -26,8 +26,8 @@
     "starter"
   ],
   "engines": {
-  		"node" : "5.9.1"
-  	},
+    "node": "5.9.1"
+  },
   "author": "Aitor Bernal Falcón <alu0100830064@ull.edu.es> (https://alu0100830064.github.io/), Joshua Perez García <alu0100830064@ull.edu.es> (https://joshuape.github.io/), Samuel Ramos Barroso <alu0100815146@ull.edu.es> (https://losnen.github.io/)",
   "license": "MIT",
   "bugs": {
@@ -47,6 +47,7 @@
   "dependencies": {
     "fs-extended": "^0.2.1",
     "fs-extra": "^0.22.1",
+    "gitbook-start-heroku-aitor-joshua-samuel": "0.0.1",
     "gitbook-start-iaas-ull-es-aitor-joshua-samuel": "0.0.9",
     "minimist": "^1.2.0"
   }

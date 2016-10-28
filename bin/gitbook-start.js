@@ -16,13 +16,13 @@ if (argv.n) {
 
 } else if (argv.d == 'iaas') {
 
-  iaas.initialize();
+    iaas.initialize();
 
-} else if(argv.d =='heroku'){
-	
-	heroku.initialize();
+} else if (argv.d == 'heroku') {
 
-}else {
+    heroku.initialize();
+
+} else {
     console.log("Añada un comando correcto");
     console.log("-> -n [NOMBRE DE DIR] (Crea la estructura de directorios)");
 }
