@@ -19,8 +19,7 @@ Comandos:
 ```shell
 gitbook-start -h --> Opción de ayuda
 gitbook-start -n [nombre del proyecto] --> Despliega una serie de directorios
-gitbook-start -d iaas -->  Te añade el plugin para el despliegue del libro en iaas.ul.es
-gitbook-start -d heroku -->  Te añade el plugin para el despliegue del libro en heroku
+gitbook-start -d [PLUGIN] -->  Te añade el plugin para el despliegue del libro, links de plugin recomendados en el apartado repositorio.
 gulp deploy-github --> despliega tu libro en github con una tarea de gulp
 gulp deploy --> Despliega tu libro en la rama gh-pages
 gulp deploy-iaas --> Depsliega tu libro en iaas.ull.es
